@@ -1,0 +1,191 @@
+body {
+  scroll-behavior: smooth;
+  height: auto;
+}
+.navbar-nav {
+  float: right;
+}
+
+.homepage_img {
+  width: 98vw;
+  background-image: url("../images/dog_cat.jpeg");
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-size: 98vw 400px;
+  max-height: 405px;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.nav-buttons {
+  float:right;
+}
+
+.homepage_img p {
+  font-size: 20px;
+}
+
+.welcome {
+  background-color: #2C7CB8;
+  opacity: 0.8;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding-top: 100px;
+  padding-left: 10px;
+  height: inherit;
+  width: 50vw;
+  float: left;
+}
+
+.welcome p {
+  margin-top: 20px;
+}
+
+.home-about-us {
+  width: 98vw;
+  background-image: url("../images/homepage5.jpeg");
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-size: 98vw 400px;
+  height: 390px;
+  background-repeat: no-repeat;
+}
+
+.home-about-us-content {
+  background-color: #2C7CB8;
+  opacity: 0.8;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: inherit;
+  width: 50vw;
+  float: right;
+}
+
+.home-about-us-content p {
+  opacity: 100%;
+  color: white;
+  font-size: 1rem;
+}
+
+.home-about-us input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2C7CB8;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: left;
+  border: none;
+}
+
+.home-about-us input:hover {
+  background-color: #ccc;
+}
+
+.section-title {
+  color: #2C7CB8;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.page-header {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.home-services {
+  text-align: center;
+}
+
+.home-services img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 80px;
+}
+
+.home-services input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2C7CB8;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: left;
+  border: none;
+}
+
+.home-services input:hover {
+  background-color: #1A6AA6;
+}
+
+.service h6 {
+  margin-bottom: 0;
+}
+
+.price {
+  color: #777;
+  margin-bottom:8px;;
+}
+
+.mission {
+  text-align: center;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.team {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.book-appt {
+   width: 80vw;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%
+}
+
+.footerInfo {
+  margin: 12px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.footerInfo h4 {
+  font-size: 18px;
+}
+
+.footerInfo textarea {
+  width: 75%;
+}
+
+.signature {
+  font-size: 12px;
+  text-align: center;
+}

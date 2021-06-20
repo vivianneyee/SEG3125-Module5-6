@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img width="300" src="./images/logo.png" alt="Viv's Veterinary Clinic">
+        </a>
+        <div class="nav-buttons">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./about-us.html">About Us</a>
+              </li>
+              <form class="d-flex" action="book.html">
+                <input class="btn btn-outline-secondary" type="submit" value="Book Appointment">
+              </form>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="heading">
+      <h1 class="display-3 page-header">About Us</h1>
+    </div>
+
+    <div class="mission">
+      <h6 class="display-6" style="color: #2C7CB8; text-align:center;">Our Mission</h6>
+      <p>At Vivianne's Veterinary Clinic, we work with you and your pet to provide service
+      specific to your needs. Whether you're coming in for a routine checkup or a complex surgery,
+      our team is ready to help.
+      </p>
+    </div>
+
+    <div class="team">
+      <h6 class="display-6" style="color: #2C7CB8; text-align:center;">Meet Our Team</h6>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem; margin-left:auto; margin-right:auto;">
+            <img src="images/drgarcia.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2C7CB8; text-align:center;">Dr. Mary Garcia</h5>
+              <p class="card-text">Dr. Garcia graduated from the University of Toronto in
+                2003 and the Ontario Veterinary College in 2007.
+                Dr. Garcia specializes in surgery,
+                dental care, and general medicine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem; margin-left:auto; margin-right:auto;">
+            <img src="images/drmoore.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2C7CB8; text-align:center;">Dr. Greg Moore</h5>
+              <p class="card-text">Dr. Moore graduated from McGill University in
+                2006 and the Ontario Veterinary College in 2010.
+                He specializes in vaccinations, lab work,
+                dental care, and general medicine</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem; margin-left:auto; margin-right:auto;">
+            <img src="images/drgrant.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2C7CB8; text-align:center;">Dr. Beth Grant</h5>
+              <p class="card-text">Dr. Grant graduated from the University of Ottawa in
+                2015 and the Ontario Veterinary College in 2019.
+                Dr. Grant specializes in vaccinations,
+                surgery, and general medicine</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light">
+      <div class="row footerInfo">
+        <div class="col">
+          <h4>Location</h4>
+          <p>208 Bank St, Ottawa, ON</p>
+          <p>(613)519-2231</p>
+          <p>info@vivsvetclinic.com</p>
+        </div>
+        <div class="col">
+          <h4>Hours</h4>
+          <div class="row">
+            <div class="col">
+              <p>Monday</p>
+              <p>Tuesday</p>
+              <p>Wednesday</p>
+              <p>Thursday</p>
+              <p>Friday</p>
+              <p>Saturday</p>
+              <p>Sunday</p>
+            </div>
+            <div class="col">
+              <p>9:00am - 4:00pm</p>
+              <p>9:00am - 4:00pm</p>
+              <p>9:00am - 4:00pm</p>
+              <p>9:00am - 4:00pm</p>
+              <p>9:00am - 4:00pm</p>
+              <p>10:00am - 4:00pm</p>
+              <p>closed</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>Contact Us</h4>
+          <input type="text" name="fullName" value="" placeholder="Full Name"><br><br>
+          <input type="text" name="email" value="" placeholder="Email Address"><br><br>
+          <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="signature">
+        Website designed by Vivianne :)
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
