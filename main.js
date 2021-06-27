@@ -70,18 +70,6 @@ function disableDates(date) {
     } else {
       return [(day != 0)];
     }
-    //
-    // if (date.getDay() === 0)
-    //     return [false];
-    // var string = jQuery.datepicker.formatDate(setDateFormat, date);
-    // return [ unavailableDates.indexOf(string) === -1 ]
-    //
-    //
-    // for (let i = 0; i < daysOff.length; i++) {
-    //   if (date.getDay() === daysOff[i]) {
-    //     return [false];
-    //   }
-    // }
 }
 
 function validatePhoneNumber() {
@@ -106,23 +94,23 @@ function disableDatesForExpert() {
   if (expert != "Choose...") {
     for (let i = 0; i < employees.length; i++) {
       if (expert === employees[i].name) {
-        if (!employeers[i].monday) {
+        if (!employees[i].monday) {
           off.push(1);
           console.log("moday off")
         }
-        if (!employeers[i].tuesday) {
+        if (!employees[i].tuesday) {
           off.push(2);
         }
-        if (!employeers[i].wednesday) {
+        if (!employees[i].wednesday) {
           off.push(3);
         }
-        if (!employeers[i].thursday) {
+        if (!employees[i].thursday) {
           off.push(4);
         }
-        if (!employeers[i].friday) {
+        if (!employees[i].friday) {
           off.push(5);
         }
-        if (!employeers[i].saturday) {
+        if (!employees[i].saturday) {
           off.push(6);
         }
       }
