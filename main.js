@@ -240,6 +240,15 @@ function validateCardNum() {
   }
 }
 
+function processPayment() {
+  var cardName = document.getElementById('inputCardHolder').value;
+  var cvv = document.getElementById('inputCVV').value;
+  var expiration = document.getElementById('inputExpiration').value;
+  if (validateCardNum() && cardName && cvv && expiration) {
+    document.getElementById('bookingSuccessful').style.display = "flex";
+  }
+}
+
 $(document).ready(function() {
   $( "#datePicker" ).datepicker(
         {

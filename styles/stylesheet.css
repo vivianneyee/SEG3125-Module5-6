@@ -238,6 +238,11 @@ html {
   background-color: #cee3f2;
 }
 
+.bookingSuccessful {
+  display: none;
+  font-size: 20px;
+}
+
 footer {
   position: relative;
   bottom: 0;

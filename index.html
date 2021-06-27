@@ -83,9 +83,6 @@
             <p>Protect your pet against viruses by vaccinating them.</p>
           </div>
         </div>
-        <form class="services-btn" action="#services" method="post">
-          <input type="submit" name="" value="See all services">
-        </form>
       </div>
       <div class="home-about-us">
         <div class="home-about-us-content">
@@ -95,9 +92,6 @@
             We have a small team of Veterinary experts and offer a wide range of veterinary
             services for your pets.
           </p>
-          <form class="about-us-btn" action="#about-us" method="post">
-            <input type="submit" name="" value="Meet our experts">
-          </form>
         </div>
       </div>
     </div>
@@ -384,7 +378,7 @@
               </div>
             </div>
             <div class="col-6">
-              <button type="button" name="payBtn" class="btn btn-primary" onclick="validateCardNum()">
+              <button type="button" name="payBtn" class="btn btn-primary" onclick="processPayment()">
                 Confirm Payment
               </button>
             </div>
@@ -418,6 +412,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="bookingSuccessful" id="bookingSuccessful">
+        Appointment booked successfully!
       </div>
     </div>
 
