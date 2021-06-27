@@ -96,7 +96,6 @@ function disableDatesForExpert() {
       if (expert === employees[i].name) {
         if (!employees[i].monday) {
           off.push(1);
-          console.log("moday off")
         }
         if (!employees[i].tuesday) {
           off.push(2);
@@ -117,7 +116,6 @@ function disableDatesForExpert() {
     }
   }
   daysOff = off;
-  console.log(daysOff)
 }
 
 function getTotals() {
