@@ -226,6 +226,14 @@ html {
   margin-bottom: 0;
 }
 
+.book-appt input:hover {
+  background-color: #cee3f2;
+}
+
+.book-appt select:hover {
+  background-color: #cee3f2;
+}
+
 footer {
   position: relative;
   bottom: 0;
