@@ -234,6 +234,10 @@ html {
   background-color: #cee3f2;
 }
 
+.payment input:hover {
+  background-color: #cee3f2;
+}
+
 footer {
   position: relative;
   bottom: 0;
