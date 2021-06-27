@@ -85,7 +85,7 @@
           <label for="inputPostal" class="form-label">Postal Code</label>
           <input type="text" class="form-control" id="inputPostal">
         </div>
-        <div class="col-6">
+        <div class="col-4">
           <label for="selectService">Service</label>
           <select id="selectService" class="form-select">
             <option selected>Choose...</option>
@@ -96,12 +96,21 @@
             <option>Laboratory Tests</option>
           </select>
         </div>
-        <div class="col-6">
+        <div class="col-4">
           <label for="selectAnimal">Animal</label>
           <select id="selectAnimal" class="form-select">
             <option selected>Choose...</option>
             <option>Dog</option>
             <option>Cat</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <label for="selectService">Expert</label>
+          <select class="form-select" id="selectService">
+            <option selected>Choose...</option>
+            <option>Dr. Mary Garcia</option>
+            <option>Dr. Greg Moore</option>
+            <option>Dr. Beth Grant</option>
           </select>
         </div>
         <div class="col-3">
@@ -120,7 +129,7 @@
             <option>11</option>
             <option>12</option>
             <option>13</option>
-            <option selected>14</option>
+            <option>14</option>
             <option>15</option>
             <option>16</option>
             <option>17</option>
@@ -133,7 +142,7 @@
             <option>24</option>
             <option>25</option>
             <option>26</option>
-            <option>27</option>
+            <option selected>27</option>
             <option>28</option>
             <option>29</option>
           </select>
@@ -167,7 +176,63 @@
           </select>
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Book Now</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePayment" aria-expanded="false" aria-controls="collapseExample">
+            Proceed to Payment
+          </button>
+          <div class="collapse" id="collapsePayment">
+            <div class="card card-body payment">
+              <h6 class="display-6">Payment</h6>
+              <div class="row">
+                <div class="col-3">
+                  <p>Subtotal:</p>
+                </div>
+                <div class="col-3" id="subtotal">
+                  <p></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <p>Taxes:</p>
+                </div>
+                <div class="col-3" id="taxes">
+                  <p></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <p>Total:</p>
+                </div>
+                <div class="col-3" id="total">
+                  <p></p>
+                </div>
+              </div>
+              <form class="row g-3">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="inputCardNumber" class="form-label">Credit Card Number</label>
+                    <input type="text" class="form-control" id="inputCardNumber">
+                  </div>
+                  <div class="col-6">
+                    <label for="inputCardHolder" class="form-label">Name on Card</label>
+                    <input type="text" class="form-control" id="inputCardHolder">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="inputExpiration" class="form-label">Expiration</label>
+                    <input type="text" class="form-control" id="inputExpiration">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputCVV" class="form-label">CVV</label>
+                    <input type="text" id="inputCVV" class="form-control">
+                  </div>
+                </div>
+                <div class="col-3">
+                  <button type="button" name="payBtn" class="btn btn-primary">Confirm Payment</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </form>
     </div>

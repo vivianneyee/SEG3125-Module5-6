@@ -6,11 +6,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
     <link rel="stylesheet" href="./styles/stylesheet.css">
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+    <script src="main.js"></script>
   </head>
   <body>
+    <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="#homepage">
           <img width="300" src="./images/logo.png" alt="Viv's Veterinary Clinic">
         </a>
         <div class="nav-buttons">
@@ -20,69 +25,403 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a href="#homepage" class="nav-link">
+                  <img class="nav-icon" src="images/homepage-icon.png" alt="">
+                  Home
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./services.html">Services</a>
+                <a href="#services" class="nav-link">
+                  <img class="nav-icon" src="images/service-icon.png" alt="">
+                  Services
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about-us.html">About Us</a>
+                <a href="#about-us" class="nav-link">
+                  <img class="nav-icon" src="images/about-us-icon.png" alt="">
+                  About Us
+                </a>
               </li>
-              <form class="d-flex" action="book.html">
-                <input class="btn btn-outline-secondary" type="submit" value="Book Appointment">
-              </form>
+              <li class="nav-item">
+                <a href="#book-appt" class="nav-link">
+                  <img class="nav-icon" src="images/book-appt-icon.png" alt="">
+                  Book Appointment
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
 
-    <div class="homepage_img">
-      <div class="welcome">
-        Welcome to Vivianne's Veterinary Clinic.
-        <p>(613) 519 - 2231</p>
+    <!-- HOME -->
+    <div class="homepage" id="homepage">
+      <div style="height: 84px;"></div>
+      <div class="homepage_img">
+        <div class="welcome">
+          Welcome to Vivianne's Veterinary Clinic.
+          <p>(613) 519 - 2231</p>
+          <p>208 Bank St, Ottawa, ON</p>
+        </div>
+      </div>
+      <div class="home-services">
+        <h1 class="section-title display-4">Our Services</h1>
+        <div class="row gx-5">
+          <div class="col px-5">
+            <img src="./images/checkup.png" width="100">
+            <h6 class="display-6">Checkups</h6>
+            <p>Bring your pet in if you have any concerns or just for a routine checkup</p>
+          </div>
+          <div class="col px-5">
+            <img src="./images/dentistry.png" width="100">
+            <h6 class="display-6">Dentistry</h6>
+            <p>We are equipped with dental equipment to offer your pet full dental treatment.</p>
+          </div>
+          <div class="col px-5">
+            <img src="./images/vaccination.png" width="100">
+            <h6 class="display-6">Vaccinations</h6>
+            <p>Protect your pet against viruses by vaccinating them.</p>
+          </div>
+        </div>
+        <form class="services-btn" action="#services" method="post">
+          <input type="submit" name="" value="See all services">
+        </form>
+      </div>
+      <div class="home-about-us">
+        <div class="home-about-us-content">
+          <h1 class="display-4">Who we are</h1>
+          <p>
+            Welcome to Vivianne's Veterinary Clinic, located in the heart of Ottawa.
+            We have a small team of Veterinary experts and offer a wide range of veterinary
+            services for your pets.
+          </p>
+          <form class="about-us-btn" action="#about-us" method="post">
+            <input type="submit" name="" value="Meet our experts">
+          </form>
+        </div>
       </div>
     </div>
 
-    <div class="home-services">
-      <h1 class="section-title display-4">Our Services</h1>
-      <div class="row gx-5">
-        <div class="col px-5">
-          <img src="./images/checkup.png" width="100">
-          <h6 class="display-6">Checkups</h6>
-          <p>Bring your pet in if you have any concerns or just for a routine checkup</p>
+
+    <!-- SERVICES -->
+    <div class="services" id="services">
+      <div style="height: 84px;"></div>
+      <div class="heading">
+        <h1 class="display-3 page-header">Services</h1>
+      </div>
+      <div class="service-list">
+        <div class="row service">
+          <div class="col-2">
+            <img src="images/checkup.png" alt="">
+          </div>
+          <div class="col-10">
+            <h6 class="display-6">General Medicine</h6>
+            <p class="price">$18.00+</p>
+            <p class="description">
+              Whether you have concerns about your pet or just want to get a routine checkup for them,
+              book an appointment under General Medicine
+            </p>
+          </div>
         </div>
-        <div class="col px-5">
-          <img src="./images/dentistry.png" width="100">
-          <h6 class="display-6">Dentistry</h6>
-          <p>We are equipped with dental equipment to offer your pet full dental treatment.</p>
+        <div class="row service">
+          <div class="col-2">
+            <img src="images/dentistry.png" alt="">
+          </div>
+          <div class="col-10">
+            <h6 class="display-6">Dentistry</h6>
+            <p class="price">$40.00+</p>
+            <p class="description">
+              With state of the art equipment, we offer routine cleanings and dental extraction.
+            </p>
+          </div>
         </div>
-        <div class="col px-5">
-          <img src="./images/vaccination.png" width="100">
-          <h6 class="display-6">Vaccinations</h6>
-          <p>Protect your pet against viruses by vaccinating them.</p>
+        <div class="row service">
+          <div class="col-2">
+            <img src="images/vaccination.png" alt="">
+          </div>
+          <div class="col-10">
+            <h6 class="display-6">Vaccination</h6>
+            <p class="price">$16.00+</p>
+            <p class="description">
+              Protect your pet from viruses by getting them vaccinated.
+            </p>
+          </div>
+        </div>
+        <div class="row service">
+          <div class="col-2">
+            <img src="images/surgery.png" alt="">
+          </div>
+          <div class="col-10">
+            <h6 class="display-6">Surgical Care</h6>
+            <p class="price">$60.00+</p>
+            <p class="description">
+              We offer surgical services including spays, neuters and tumor removal procedures. Our experts are experienced surgeons.
+            </p>
+          </div>
+        </div>
+        <div class="row service">
+          <div class="col-2">
+            <img src="images/lab.png" alt="">
+          </div>
+          <div class="col-10">
+            <h6 class="display-6">Laboratory Tests</h6>
+            <p class="price">$32.00+</p>
+            <p class="description">
+              Our clinic has a laboratory on-site and we offer lab tests including blood tests and urinalysis
+            </p>
+          </div>
         </div>
       </div>
-      <form class="services-btn" action="services.html" method="post">
-        <input type="submit" name="" value="See all services">
-      </form>
     </div>
 
-    <div class="home-about-us">
-      <div class="home-about-us-content">
-        <h1 class="display-4">Who we are</h1>
-        <p>
-          Welcome to Vivianne's Veterinary Clinic, located in the heart of Ottawa.
-          We have a small team of Veterinary experts and offer a wide range of veterinary
-          services for your pets.
+
+    <!-- ABOUT US -->
+    <div class="about-us" id="about-us">
+      <div style="height: 84px;"></div>
+      <div class="heading">
+        <h1 class="display-3 page-header">About Us</h1>
+      </div>
+
+      <div class="mission">
+        <h6 class="display-6" style="color: #2C7CB8; text-align:center;">Our Mission</h6>
+        <p>At Vivianne's Veterinary Clinic, we work with you and your pet to provide service
+        specific to your needs. Whether you're coming in for a routine checkup or a complex surgery,
+        our team is ready to help.
         </p>
-        <form class="about-us-btn" action="about-us.html" method="post">
-          <input type="submit" name="" value="Meet our experts">
+      </div>
+
+      <div class="team">
+        <h6 class="display-6" style="color: #2C7CB8; text-align:center;">Meet Our Team</h6>
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem; margin-left:auto; margin-right:auto;">
+              <img src="images/drgarcia.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #2C7CB8; text-align:center;">Dr. Mary Garcia</h5>
+                <p class="card-text">Dr. Garcia graduated from the University of Toronto in
+                  2003 and the Ontario Veterinary College in 2007.
+                  Dr. Garcia specializes in surgery,
+                  dental care, and general medicine.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem; margin-left:auto; margin-right:auto;">
+              <img src="images/drmoore.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #2C7CB8; text-align:center;">Dr. Greg Moore</h5>
+                <p class="card-text">Dr. Moore graduated from McGill University in
+                  2006 and the Ontario Veterinary College in 2010.
+                  He specializes in vaccinations, lab work,
+                  dental care, and general medicine</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem; margin-left:auto; margin-right:auto;">
+              <img src="images/drgrant.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #2C7CB8; text-align:center;">Dr. Beth Grant</h5>
+                <p class="card-text">Dr. Grant graduated from the University of Ottawa in
+                  2015 and the Ontario Veterinary College in 2019.
+                  Dr. Grant specializes in vaccinations,
+                  surgery, and general medicine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- BOOK APPOINTMENT -->
+    <div class="book-appt" id="book-appt">
+      <div style="height: 84px;"></div>
+      <div class="heading">
+        <h1 class="display-3 page-header">Book Appointment</h1>
+      </div>
+      <div class="book-appt">
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="inputName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="inputName">
+            <p class="errorMsg" id="nameErrMsg"></p>
+          </div>
+          <div class="col-md-4">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="you@example.com">
+            <p class="errorMsg" id="emailErrMsg"></p>
+          </div>
+          <div class="col-md-4">
+            <label for="inputPhoneNumber" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="(xxx) xxx - xxxx">
+            <p class="errorMsg" id="phoneNumErrMsg"></p>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <p class="errorMsg" id="addressErrMsg"></p>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+            <p class="errorMsg" id="cityErrMsg"></p>
+          </div>
+          <div class="col-md-4">
+            <label for="inputProvince" class="form-label">Province</label>
+            <select id="inputProvince" class="form-select">
+              <option selected>Choose...</option>
+              <option>ON</option>
+              <option>QC</option>
+              <option>AB</option>
+              <option>BC</option>
+              <option>MB</option>
+              <option>NB</option>
+              <option>NL</option>
+              <option>NS</option>
+              <option>NU</option>
+              <option>PE</option>
+              <option>SK</option>
+              <option>YT</option>
+            </select>
+            <p class="errorMsg" id="provinceErrMsg"></p>
+          </div>
+          <div class="col-md-2">
+            <label for="inputPostal" class="form-label">Postal Code</label>
+            <input type="text" class="form-control" id="inputPostal">
+            <p class="errorMsg" id="postalErrMsg"></p>
+          </div>
+          <div class="col-4">
+            <label for="selectService" class="form-label">Service</label>
+            <select id="selectService" class="form-select">
+              <option selected>Choose...</option>
+              <option value="General Medicine">General Medicine</option>
+              <option value="Dentistry">Dentistry</option>
+              <option value="Vaccination">Vaccination</option>
+              <option value="Surgical Care">Surgical Care</option>
+              <option value="Laboratory Tests">Laboratory Tests</option>
+            </select>
+            <p class="errorMsg" id="serviceErrMsg"></p>
+          </div>
+          <div class="col-4">
+            <label for="selectAnimal" class="form-label">Animal</label>
+            <select id="selectAnimal" class="form-select">
+              <option selected>Choose...</option>
+              <option>Dog</option>
+              <option>Cat</option>
+            </select>
+            <p class="errorMsg" id="animalErrMsg"></p>
+          </div>
+          <div class="col-4">
+            <label for="selectExpert" class="form-label" onchange="disableDatesForExpert()">Expert</label>
+            <select class="form-select" id="selectExpert">
+              <option selected>Choose...</option>
+              <option value="Dr. Garcia">Dr. Mary Garcia</option>
+              <option value="Dr. Moore">Dr. Greg Moore</option>
+              <option value="Dr. Grant">Dr. Beth Grant</option>
+            </select>
+            <p class="errorMsg" id="expertErrMsg"></p>
+          </div>
+          <div class="col-4">
+            <label for="datePicker" class="form-label">Date</label>
+            <input class="form-control" type="text" id="datePicker">
+            <p class="errorMsg" id="dateErrMsg"></p>
+          </div>
+          <div class="row" style="margin-top:20px;">
+            <div class="col-6">
+              <form class="" action="#book-appt" method="post">
+                <button type="submit" name="confirmApptBtn" class="form-submit btn btn-primary"
+                onclick="proceedToPayment()">
+                  Proceed to payment
+                </button>
+              </form>
+            </div>
+          </div>
         </form>
       </div>
     </div>
 
+    <!-- PAYMENT -->
+    <div class="row payment" id="payment">
+      <div class="col-8">
+        <div>
+          <div class="payment-header">
+            <h6 class="display-6">Payment</h6>
+            <img src="images/payment-icon.png" alt="">
+          </div>
+          <form class="row g-3">
+            <div class="row">
+              <div class="col-6">
+                <label for="inputCardNumber" class="form-label cardNum">
+                  Credit Card Number
+                  <img src="images/tooltip-icon.png" style="width:25px; margin-bottom:5px;"
+                  data-bs-toggle="tooltip" rel="tooltip" data-bs-placement="right" title="We take payment beforehand in the event of last-minute cancellation">
+                </label>
+                <input type="text" class="form-control" id="inputCardNumber" placeholder="xxxx xxxx xxxx xxxx">
+                <p class="errorMsg" id="cardNumErrMsg"></p>
+              </div>
+              <div class="col-6">
+                <label for="inputCardHolder" class="form-label">Name on Card</label>
+                <input type="text" class="form-control" id="inputCardHolder">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="inputExpiration" class="form-label">Expiration</label>
+                <input type="text" class="form-control" id="inputExpiration">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCVV" class="form-label">
+                  CVV
+                  <img src="images/tooltip-icon.png" style="width:25px; margin-bottom:5px;"
+                  data-bs-toggle="tooltip" rel="tooltip" data-bs-placement="right" title="The 3 numbers on the back of your card">
+                </label>
+                <input type="text" id="inputCVV" class="form-control">
+              </div>
+            </div>
+            <div class="col-6">
+              <button type="button" name="payBtn" class="btn btn-primary" onclick="validateCardNum()">
+                Confirm Payment
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card card-body total-price">
+          <div class="row">
+            <div class="col-6">
+              <p>Subtotal:</p>
+            </div>
+            <div class="col-6">
+              <p id="subtotal"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p>Taxes:</p>
+            </div>
+            <div class="col-6">
+              <p id="taxes"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p>Total:</p>
+            </div>
+            <div class="col-6">
+              <p id="total" class="showPrice"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- FOOTER -->
     <footer class="bg-light">
       <div class="row footerInfo">
         <div class="col">

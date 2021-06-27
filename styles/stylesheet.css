@@ -2,6 +2,22 @@ body {
   scroll-behavior: smooth;
   height: auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-icon {
+  width: 30px;
+}
+
 .navbar-nav {
   float: right;
 }
@@ -12,9 +28,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  background-size: 98vw 400px;
-  max-height: 405px;
-  height: 400px;
+  background-size: 98vw 500px;
+  //max-height: 500px;
+  height: 500px;
   background-repeat: no-repeat;
 }
 
@@ -163,6 +179,51 @@ body {
    width: 80vw;
    margin-left: auto;
    margin-right: auto;
+}
+
+.payment button {
+  margin-top: 16px;
+}
+
+.payment {
+  margin-top:20px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.total-price {
+  height: 322px;
+}
+
+.payment h6 {
+  margin-bottom: 20px;
+  color: #2C7CB8;
+}
+
+.payment-header {
+  display: flex;
+}
+
+.payment-header img {
+  width: 66px;
+  height: 44px;
+  margin-left: 10px;
+}
+
+.payment form {
+  margin-top: 12px;
+}
+
+.cardNum {
+  display: inline;
+}
+
+.errorMsg {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 0;
 }
 
 footer {
